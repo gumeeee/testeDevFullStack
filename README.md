@@ -98,3 +98,35 @@
 
   # Rebuild após mudanças
   docker-compose up --build
+
+  Scripts Disponíveis
+
+  Backend
+
+  php artisan serve          # Iniciar servidor
+  php artisan migrate        # Executar migrations
+  php artisan migrate:fresh  # Recriar banco
+  php artisan test           # Executar testes
+
+  Frontend
+
+  npm run dev      # Servidor de desenvolvimento
+  npm run build    # Build de produção
+  npm run preview  # Preview do build
+  npm run lint     # Verificar código
+  npm run test     # Executar testes
+
+  Variáveis de Ambiente
+
+  Backend (backend/.env)
+
+  APP_NAME=testeDevFullStack
+  APP_ENV=local
+  APP_DEBUG=true
+  APP_KEY=  # Gerado com php artisan key:generate
+
+  DB_CONNECTION=sqlite
+
+  Frontend (frontend/.env)
+
+  VITE_API_URL=http://localhost:8000/api
