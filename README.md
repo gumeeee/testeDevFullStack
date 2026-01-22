@@ -2,6 +2,10 @@
 
   Teste técnico para sistema de autenticação e gestão de usuários com diferentes níveis de permissão.
 
+  Deploy do Front end via AWS Amplify: https://main.d1pvj7rp3jo9t2.amplifyapp.com
+  Deploy do Back end via AWS Lightsail com Quick Tunnel da Cloudflare: https://massive-basket-wine-cold.trycloudflare.com
+  Deploy Statico do Back end na Railway: pacific-kindness-production-48ea.up.railway.app/api/v1/ 
+
   ## Tecnologias Utilizadas
 
   | Camada | Tecnologia |
