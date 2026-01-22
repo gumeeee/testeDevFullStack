@@ -80,15 +80,10 @@ export const useAuthStore = create<AuthStoreState>()(
           try {
             const user = JSON.parse(userString) as User;
 
-            set((state) => {
-              if (!state.isAuthenticated) {
-                return {
-                  user,
-                  token,
-                  isAuthenticated: true,
-                };
-              }
-              return state;
+            set({
+              user,
+              token,
+              isAuthenticated: true,
             });
           } catch (error) {
             console.error("Erro ao verificar autenticação:", error);
